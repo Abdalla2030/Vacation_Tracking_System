@@ -70,7 +70,7 @@ HR remains responsible for maintaining employee leave data.
 
 ![Manage Time Flowchart](Phase%201/manage-time-flowchart.png)
 
-'''
+```text
 Start
 → Open VTS from intranet portal
 → Display requests and balances
@@ -101,7 +101,7 @@ Start
         → Email result to employee
         → Return manager to VTS home page
 → End
-'''
+```
 
 ## Data Model
 
