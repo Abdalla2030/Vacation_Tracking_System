@@ -1,0 +1,32 @@
+Use Case Name: Manage Time
+Actors: employees, managers
+Goal: employee submits a request for vacation time
+Preconditions: employee is authenticated by the portal framework, and identified as employee with privilages to manage his/her vacation time
+Main Flow
+The employee begins by selecting a link from the intranet portal to the VTS.
+
+The VTS uses the employee’s credentials to look up the current status of all the employee’s vacation time requests and outstanding balances. Information is displayed for the previous 6 months and up to 18 months in the future.
+
+The employee wants to create a new request. The employee selects one of the categories of vacation time with a positive balance to use.
+
+The VTS prompts the employee for the date(s) and time for which to request vacation time. The employee should have access to a visual calendar to help select and compare chosen dates.
+
+The employee selects the desired dates and hours per date (e.g., four hours might indicate a half-day vacation time request). The employee enters a short title and description (no more than a paragraph in length) so that the manager will have more information with which to approve this request. When all the information is entered, the employee submits the request.
+
+If the submitted information is incomplete or incorrect or does not pass validation, the Web page is redisplayed, with the errors highlighted and documented.
+
+The employee has an opportunity to change the information or cancel the request.
+
+If the information is complete and passes validation, the employee is returned to the main VTS home page. If the employee’s vacation time requests require manager approval, an e-mail is immediately sent to the manager(s) authorized to approve the employee’s requests.
+
+The vacation time request is placed in a state of pending approval.
+
+The manager responds to the e-mail by clicking on a link embedded in the e-mail or by explicitly logging into the intranet portal and navigating to the main VTS home page.
+
+The manager may be required to supply necessary authentication credentials to gain access to the portal and VTS application.
+
+The VTS home page lists the manager’s own vacation time requests and outstanding balances but also has a separate section listing requests pending approval by subordinate employees. The manager selects each of these one at a time to individually approve or deny.
+
+The VTS displays the details of the requested time and prompts the manager to approve or disapprove the request. If the request is disapproved, the manager is required to enter an explanation. Once the manager submits the result, the internal state of the request is changed to approved or rejected.
+
+Whether a request is approved or rejected, an e-mail notification is immediately sent to the employee who made the request. The manager’s screen returns to the main VTS home page, and the manager may approve other outstanding requests, make a request for him- or herself, or simply leave the VTS application.
