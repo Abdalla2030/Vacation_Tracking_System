@@ -68,25 +68,40 @@ HR remains responsible for maintaining employee leave data.
 
 ### Submit New Request
 
-> **Image placeholder:** Submit New Request flowchart will be added here.
+![Manage Time Flowchart](Phase%201/manage-time-flowchart.png)
 
-<!-- Add the image to images/ and uncomment the following line when ready. -->
-<!-- ![Submit New Request Flowchart](images/submit-new-request-flowchart.png) -->
-
-```text
+'''
 Start
-→ View requests and balances
-→ Select leave category
-→ Enter dates, hours, title, and description
+→ Open VTS from intranet portal
+→ Display requests and balances
+  (previous 6 months / next 18 months)
+→ Select leave category with a positive balance
+→ Select dates and hours using calendar
+→ Enter title and short description
 → Submit request
-→ Validate information
-  - Invalid → Show errors → Correct and resubmit, or cancel.
-  - Valid → Check whether approval is required.
-    - Required → Set Pending Approval → Notify manager
-      → Approve or reject with a reason → Update status → Notify employee.
-    - Not required → Remaining steps are unspecified in the text.
+→ Valid request?
+  - No → Display highlighted errors → Cancel submission?
+    - Yes → End.
+    - No → Correct information and resubmit.
+  - Yes → Return employee to VTS home page
+    → Manager approval required?
+      - No → Further processing not specified in text → End.
+      - Yes → Notify authorized manager by email
+        → Set request to Pending Approval
+        → Manager opens VTS via email link or portal
+        → Authenticate if required
+        → Display own requests and balances
+        → Select pending employee request
+        → View request details
+        → Approve request?
+          - Yes → Set status to Approved.
+          - No → Require rejection explanation
+            → Set status to Rejected.
+        → Submit decision and update request
+        → Email result to employee
+        → Return manager to VTS home page
 → End
-```
+'''
 
 ## Data Model
 
