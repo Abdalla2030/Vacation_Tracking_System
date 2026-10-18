@@ -19,6 +19,10 @@ HR remains responsible for maintaining employee leave data.
 | **Clerk (HR)** | Maintains employee records, sets leave allowances and manager award limits, and can override rule-based request rejections. |
 | **System Admin** | Maintains the system’s technical resources, including the web server and database, and collects, archives, and backs up system logs. |
 
+## Use Case Diagram
+
+![Manage Time Use Case Diagram](Phase%201/manage-time-use-case.png)
+
 ## Functional Requirements
 
 1. Allow employees to create and view their own leave requests.
