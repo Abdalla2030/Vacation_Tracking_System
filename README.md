@@ -60,9 +60,9 @@ HR remains responsible for maintaining employee leave data.
 
 ## Constraints
 
-- The system shall use the company’s existing hardware and middleware.
-- The system shall be implemented as a web application extending the existing intranet portal.
-- The system shall use the portal’s existing single sign-on (SSO) mechanism for all authentication.
+- Use the company’s existing hardware and middleware.
+- Implement the system as a web application extending the existing intranet portal.
+- Rely on the portal’s existing single sign-on (SSO) mechanism for all authentication.
 
 ## Flowchart
 
@@ -105,37 +105,37 @@ Start
 
 ## Data Model
 
+![Manage Time Data Model](Phase%201/manage-time-data-model.png)
+
 | Entity | Attributes |
 | --- | --- |
-| **Employee** | employeeId, name, email, managerId, locationId |
+| **Employee** | employeeId, name, email, managerId |
 | **LeaveCategory** | categoryId, name |
 | **LeaveBalance** | employeeId, categoryId, remainingHours |
-| **LeaveRequest** | requestId, employeeId, categoryId, title, description, status, rejectionReason, cancellationExplanation |
+| **LeaveRequest** | requestId, employeeId, categoryId, title, description, status, rejectionReason |
 | **LeaveRequestDay** | requestDayId, requestId, date, hours |
-| **Location** | locationId, name |
 
 ### Relationships
 
-- One Employee can submit many LeaveRequests. Each request belongs to one employee.
-- One LeaveCategory can be associated with many LeaveRequests. Each request uses one category.
-- One LeaveRequest contains one or more LeaveRequestDays. Each day belongs to one request.
-- One Employee can have many LeaveBalances, with one balance per leave category.
-- One LeaveCategory can be associated with many LeaveBalances. Each balance belongs to one employee and one category.
-- One Location can have many Employees. Each employee has one primary work location.
-- A Manager is an employee who supervises other employees. An employee may supervise many employees; each subordinate references their manager through managerId.
+- **Employee submits LeaveRequest:** One employee can submit zero or many requests. Each request belongs to one employee.
+- **LeaveRequest uses LeaveCategory:** Each request uses one category. A category can be used by zero or many requests.
+- **Employee has LeaveBalance:** One employee can have zero or many balances, with one balance per leave category.
+- **LeaveCategory has LeaveBalance:** One category can have zero or many balances. Each balance belongs to one category.
+- **LeaveRequest contains LeaveRequestDay:** One request contains one or more days. Each day belongs to one request.
+- **Employee manages Employee:** One employee can manage zero or many employees. Each employee has zero or one manager, referenced through managerId.
 
 ### Request Status Values
 
 - `PENDING_APPROVAL`
 - `APPROVED`
 - `REJECTED`
-- `WITHDRAWN`
-- `CANCELED`
 
 ### Design Notes
 
-- LeaveRequestDay stores the date and requested hours separately because a request can cover multiple days with different hours.
+- LeaveRequestDay stores each requested date and its hours separately.
 - Manager is represented through the employee relationship rather than a separate entity.
+- Employee and category together form the primary key of LeaveBalance.
+
 
 ## Pseudocode
 
