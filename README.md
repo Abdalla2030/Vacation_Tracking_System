@@ -189,7 +189,4 @@ END
 
 ### Submit New Request
 
-> **Image placeholder:** Submit New Request sequence diagram will be added here.
-
-<!-- Add the image to images/ and uncomment the following line when ready. -->
-<!-- ![Submit New Request Sequence Diagram](images/submit-new-request-sequence.png) -->
+![Submit New Request Sequence Diagram](Phase%201/manage-time-sequence.png)
