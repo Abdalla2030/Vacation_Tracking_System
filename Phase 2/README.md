@@ -81,6 +81,8 @@ END FUNCTION
 
 ## 4. Request State Machine Diagram
 
+![Request State Machine Diagram](state_machine_diagram.png)
+
 ## 5. Main Flow — Submit New Request
 ### Sequence Diagram
 
