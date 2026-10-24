@@ -29,6 +29,10 @@ The application reads transitions and allowed roles from the database instead of
 
 Once this configuration is supported, these stages can be added by updating the database without changing the code.
 
+### Updated ERD
+
+![Updated VTS ERD](VTS_Updated_ERD.png)
+
 ## 3. Pseudocode
 
 ### Requests UI
