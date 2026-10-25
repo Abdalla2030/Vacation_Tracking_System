@@ -134,7 +134,7 @@ Start
 
 ### Sequence Diagram
 
-To be added.
+![Withdraw Request Sequence Diagram](Withdraw%20Request.png)
 
 ### Database Changes
 
@@ -216,7 +216,7 @@ END FUNCTION
 
 ### Sequence Diagram
 
-To be added.
+![Cancel Approved Request Sequence Diagram](Cancel%20Approved%20Request.png)
 
 ### Database Changes
 
@@ -287,7 +287,7 @@ If the employee selects withdrawal, follow the Withdraw Request flow.
 
 ### Sequence Diagram
 
-To be added.
+![Edit Pending Request Sequence Diagram](Edit%20Pending%20Request.png)
 
 ### Database Changes
 
