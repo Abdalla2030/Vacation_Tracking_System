@@ -84,7 +84,14 @@ END FUNCTION
 ![Request State Machine Diagram](state_machine_diagram.png)
 
 ## 5. Main Flow — Submit New Request
+
 ### Sequence Diagram
+
+![Main Flow Sequence Diagram](Main%20Flow%20Sequence%20Diagram.png)
+
+### Use Case Diagram
+
+![Use Case Diagram](Use%20Case%20Diagram.png)
 
 ## 6. Alternate Flow — Withdraw Request
 
