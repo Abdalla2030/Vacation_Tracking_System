@@ -103,16 +103,7 @@ END FUNCTION
 
 ### Flowchart
 
-Start
-→ Display employee requests
-→ Select a Pending Approval request
-→ Ask for withdrawal confirmation
-→ Confirm?
-  - No → Keep request unchanged → End
-  - Yes → Change status to Withdrawn
-        → Remove request from the manager's pending approvals
-        → Notify manager by email
-        → End
+![Withdraw Request Flowchart](Withdraw%20Request%20Flowchart.png)
 
 ### Pseudocode
 
@@ -167,20 +158,7 @@ The request remains stored in Vacation Request.
 
 ### Flowchart
 
-Start
-→ Select an Approved request
-→ Check vacation dates
-  - Not in the future or previous 5 business days → Display error → End
-  - Future → Ask for confirmation
-  - Previous 5 business days → Ask for confirmation and explanation
-→ Confirm?
-  - No → Keep request unchanged → End
-  - Yes → Validate required information
-        → Change status to Canceled
-        → Restore leave balance
-        → Notify manager by email
-        → Display updated home page
-        → End
+![Cancel Approved Request Flowchart](Cancel%20Approved%20Request%20Flowchart.png)
 
 ### Pseudocode
 
@@ -247,19 +225,7 @@ Update the corresponding Employee Balance.current_balance when cancellation succ
 
 ### Flowchart
 
-Start
-→ Select a Pending Approval request
-→ Display editable request
-→ Employee action?
-  - Withdraw → Follow Withdraw Request flow → End
-  - Edit → Change title, comments, or dates
-         → Submit changes
-         → Validate changes
-           - Invalid → Display errors → Return to editing
-           - Valid → Save changes
-                   → Keep status Pending Approval
-                   → Display home page
-                   → End
+![Edit Pending Request Flowchart](Edit%20Pending%20Request%20Flowchart.png)
 
 ### Pseudocode
 
