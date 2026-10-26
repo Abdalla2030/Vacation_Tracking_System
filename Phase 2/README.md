@@ -103,7 +103,7 @@ END FUNCTION
 
 ### Flowchart
 
-![Withdraw Request Flowchart](Withdraw%20Request%20Flowchart.png)
+![Withdraw Request Flowchart](Withdraw%20request%20flowchart.png)
 
 ### Pseudocode
 
@@ -158,7 +158,7 @@ The request remains stored in Vacation Request.
 
 ### Flowchart
 
-![Cancel Approved Request Flowchart](Cancel%20Approved%20Request%20Flowchart.png)
+![Cancel Approved Request Flowchart](Cancel%20approved%20request%20flowchart.png)
 
 ### Pseudocode
 
@@ -225,7 +225,7 @@ Update the corresponding Employee Balance.current_balance when cancellation succ
 
 ### Flowchart
 
-![Edit Pending Request Flowchart](Edit%20Pending%20Request%20Flowchart.png)
+![Edit Pending Request Flowchart](Edit%20pending%20request%20flowchart.png)
 
 ### Pseudocode
 
