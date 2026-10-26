@@ -1,8 +1,14 @@
 # VTS — Session 2 Tasks
 
 ## 1. Requests UI
+
 ### Employee View
+
+![Employee View](Employee%20vacation%20tracking%20portal.png)
+
 ### Manager View
+
+![Manager View](Manager%20Reviews%20Pending%20Team%20Leave%20Requests.png)
 
 ## 2. Supporting New Statuses
 
